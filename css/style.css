@@ -1,0 +1,73 @@
+:root{
+    --PrimaryColor:#22262a;
+    --SecundaryColor:#b3b3b3;
+}
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body{
+    font-family:'PT Sans', sans-serif;
+    margin: 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.container-header{
+    display: grid;
+    grid-template-columns: 10% 20% 40% 20% 10%;
+    grid-auto-rows: repeat(2,auto);
+    grid-template-areas: '. sign-in logo-marvel marvel-master-card .'
+                         'items-menu items-menu items-menu items-menu items-menu';
+    background-color: var(--PrimaryColor);
+    color: white;
+    
+}
+.sign-in{
+    grid-area: sign-in;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/sign-in-icon.png');
+    background-repeat: no-repeat;
+    background-size: 45.841px;
+    padding: 0 1.5em;
+    background-position-x: 20px;
+    background-position-y: center;
+    border-left: 1px solid var(--SecundaryColor);
+    
+
+}
+.sign-in p{
+ margin-left: 2em
+}
+.logo-marvel{
+    grid-area:logo-marvel;
+    height: 109px;
+    margin: 0 auto
+}
+
+.marvel-master-card{
+    
+    grid-area:marvel-master-card;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--SecundaryColor);
+    border-right: 1px solid var(--SecundaryColor);
+}
+
+.items-menu{
+    grid-area: items-menu;
+    border-top: 1px solid var(--SecundaryColor);;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.items-menu ul li{
+   
+    display: inline;
+    margin-right: 3.1em
+}
