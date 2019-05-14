@@ -84,19 +84,22 @@ body{
     grid-template-rows: repeat(2,auto);
     grid-template-areas: '. container-groot container-text-groot container-text-groot . .'
                          '. container-groot . . container-deadpool container-text-deadpool';
-    padding-top: 4em 0;
-    margin-top: 3em 0 
+    padding-top: 4em;
+    margin-top: 3em 
 }
 
 .container-groot{
     grid-area: container-groot;
-    padding: 2.5em 0
+    padding-top: 2.5em;
+    position: relative;
     
 }
 
 .container-groot img{
    height: 359px;
-   width: auto
+   width: auto;
+   position: absolute;
+   bottom: 5px;
 }
 
 .container-text-groot{
@@ -108,10 +111,7 @@ body{
     font-size: 43px;
     text-transform: none;
     margin: 0;
-    /* position: absolute; */
     
-    
-
 }
 
 
@@ -121,7 +121,7 @@ body{
 }
 
 .container-deadpool img{
-    height: 297px;
+    height: 260px;
     width: auto;
     
 }
@@ -135,7 +135,13 @@ body{
    font-size: 1.1em;
    text-transform: none;
    position: absolute;
-   left: -4.3em;
-  
-    
+   left: -7.5em;
+   text-align: center
+
 }
+
+.container-text-deadpool a{
+    color: cornflowerblue;
+    cursor: pointer;
+ 
+ }
